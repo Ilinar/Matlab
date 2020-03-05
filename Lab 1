@@ -33,7 +33,6 @@ O=N*N
 P=N.*N
 
 
-
 %3
 
 x=0:0.1:1;
@@ -44,3 +43,18 @@ for i=length(x)
     end
 end
 plot(x,y)
+
+
+%4
+
+h=0.1;
+x=0:h:1;
+
+y(1)=1;
+
+for i=2:length(x)
+    y(i)=y(i-1)+h*x(i-1)^2;
+end
+
+y_sc=x.^3/3+1;
+plot(x,y,'.',x,y_sc)
