@@ -5,3 +5,11 @@ z=0;
 for i=1:10;
     z=z+i*x+y/i;
 end
+
+%2
+
+function z=z(x,n)
+z=0;
+for i=1:n;
+    z=i/x^i;
+end
