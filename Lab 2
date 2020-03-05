@@ -6,6 +6,7 @@ for i=1:10;
     z=z+i*x+y/i;
 end
 
+
 %2
 
 function z=z(x,n)
@@ -13,3 +14,12 @@ z=0;
 for i=1:n;
     z=z+i/x^i;
 end
+
+
+%3
+
+function y=y(x,t)
+y=20sin(x)*exp(-1*t)
+end
+    
+    
