@@ -1,0 +1,7 @@
+%1
+
+function z=z(x,y)
+z=0;
+for i=1:10;
+    z=z+i*x+y/i;
+end
